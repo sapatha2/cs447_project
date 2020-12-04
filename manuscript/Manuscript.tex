@@ -60,12 +60,12 @@ After filtering, the corpus was split into 75$\%$ training data and 25$\%$ valid
 
 \begin{figure}
 \includegraphics[scale = 0.15]{../plots/architecture.pdf}
-\label{fig:architectures}
 \caption{
 Three architectures used in this study from the simplest, Base-Base, at the top, to the most complex, Deep-Att, at the bottom.
 The blue boxes refer to the encoder network, the red to the decoder, and pink the attention network.
 The study focuses on the benefit from Base-Att to Deep-Att, which improvements from Base-Base to Base-Att as reference.
 } 
+\label{fig:architectures}
 \end{figure}
 
 For this study I used three model architectures, which can be seen in Figure ~\ref{fig:architectures}.
@@ -107,22 +107,22 @@ Indeed, in \cite{miceli-barone-etal-2017-deep}, the largest improvement from the
 Lastly, the languages I selected are not representative of the large linguistic variation that exists in written languages.
 As such, to get more conclusive statements of the benefits of these deep architectures, much more extensive work is required.
 
-\begin{figure}
+\begin{table}
 \input{../plots/table.tex}
-\label{fig:table}
 \caption{
 Results from the different models fit in this study.
 Presented are the different tasks, models, the number of parameters, and the four BLEU scores that were computed.
 }
-\end{figure}
+\label{fig:table}
+\end{table}
 
 \begin{figure}
 \includegraphics{../plots/barplot.pdf}
-\label{fig:table}
 \caption{
 Summary of the BLEU4 score improvements found in this study across the different translation tasks, English to various languages.
 The heights of the colored bars refer to the improvement with each addition to the network.
 }
+\label{fig:barplot}
 \end{figure}
 
 \section{Conclusion}
